@@ -1,6 +1,6 @@
-# 🛠️ ToolShopDemo Automated Testing Framework
+#🎭 [Playwright] ToolShopDemo Automated Testing Framework
 
-> **Status du Projet :** 🚧 En cours de développement (Work In Progress) 🚧
+> **Status du Projet  🛠️:** 🚧 En cours de développement (Work In Progress) 🚧
 >
 > Ce dépôt héberge un framework d'automatisation de tests de bout en bout (E2E) pour le site e-commerce d'entraînement **ToolShopDemo**.
 >  L'objectif est de couvrir le tunnel de conversion critique et les parcours utilisateurs essentiels.
