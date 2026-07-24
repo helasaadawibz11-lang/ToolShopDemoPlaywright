@@ -1,6 +1,7 @@
 Feature: Tester le module Login du site ToolShopDemo
 
     #Registred account for test  ( tryme@gmail.com  /  tryME123456789#)
+      #Bob Smith	user	customer3@practicesoftwaretesting.com pass123
 
 
   #✅ Acceptance Criteria
@@ -36,7 +37,7 @@ Feature: Tester le module Login du site ToolShopDemo
   Scenario: Connexion reussie avec des données valides et existante
     Given je connecte sur le site ToolShopDemo
     When j ouvre le formulaire  de connexion
-    And je saisi adresse email "tryme@gmail.com"
+    And je saisi adresse email "customer3@practicesoftwaretesting.com"
     And je saisi Password "tryME123456789#"
     And je click sur login
     Then Redirection vers mon tableau de bord
@@ -69,4 +70,16 @@ Feature: Tester le module Login du site ToolShopDemo
 
 
 
+
+    #destruction session apres logout
+  Scenario: Tester le retour en arriére vers la session du compte apres logout
+    Given je connecte sur le site ToolShopDemo
+    When j ouvre le formulaire  de connexion
+    And je saisi adresse email "customer3@practicesoftwaretesting.com"
+    And je saisi Password "pass123"
+    And je click sur login
+    And je me deconnecte de mon compte
+    And j actualise la page
+    And je click sur le retour page precedante
+    Then je reste toujours sur la page login
 

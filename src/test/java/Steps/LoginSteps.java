@@ -2,6 +2,7 @@ package Steps;
 
 import Pages.LoginPage;
 import Pages.RegisterPage;
+import Pages.WishlistPage;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.assertions.PlaywrightAssertions;
 import io.cucumber.java.PendingException;
@@ -18,6 +19,7 @@ public class LoginSteps {
     Page page ;
     LoginPage loginPage ;
     RegisterPage registerPage;
+    WishlistPage wishlistpage ;
 
 
 
@@ -75,6 +77,34 @@ public class LoginSteps {
         com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat(loginPage.getAlerteParTexte(Alerte)).isVisible();
         System.out.println("Apres validation , l'alerte est bien adequate");
 
+
+    }
+
+    @And("je click sur le retour page precedante")
+    public void jeClickSurLeRetourPagePrecedante() {
+        page.goBack();
+    }
+
+    @Then("je reste toujours sur la page login")
+    public void jeResteToujoursSurLaPageLogin() {
+
+        PlaywrightAssertions.assertThat(page).hasURL("https://practicesoftwaretesting.com/auth/login");
+        System.out.println("apres validation URL , le retour en arriére me bloque toujours sur la page login ");
+    }
+
+    @And("j actualise la page")
+    public void jActualiseLaPage() {
+        this.wishlistpage=new WishlistPage(page);
+        page.reload();
+
+    }
+
+    @And("je me deconnecte de mon compte")
+    public void jeMeDeconnecteDeMonCompte() {
+        this.wishlistpage=new WishlistPage(page);
+        wishlistpage.ClickAccountMenu();
+        wishlistpage.ClickLogout();
+        System.out.println("Compte deconnecté !");
 
     }
 }
