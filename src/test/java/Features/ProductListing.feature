@@ -75,7 +75,6 @@ Feature: Tester le module Product listing du site ToolShopDemo
     Then la liste ne doit afficher que des produits appartenant à "Hammer"
     And les produits doivent être ordonnés par "Prix (Bas - Élevé)" de manière correcte
 
-
   @test
   # Réinitialisation = Reset
   Scenario: Réinitialiser les filtres et la recherche
