@@ -17,7 +17,7 @@ Voici l'état d'avancement de la couverture des tests automatisés. Les modules 
 - [Done] **Wishlist** : Ajout/suppression de produits depuis la fiche détail, gestion des doublons, points d'accès et persistance après reconnexion.
 
 ### 🛒 Tunnel d'Achat Critique (E2E Core) — *En cours de construction*
-- [WIP ] **Product Listing** : Navigation dans le catalogue, filtres de recherche 
+- [Done ] **Product Listing** : Navigation dans le catalogue, filtres de recherche 
 - [WIP ] **Product Detail Page** : Vérification des fiches produits, ajustement des quantités et ajout au panier.
 - [WIP ] **Shopping Cart** : Modification du panier, suppression d'articles et calcul automatique du montant total.
 - [WIP ] **Checkout and Payment** : Flux complet de validation des adresses, choix de la méthode de paiement (Bank Transfer, Credit Card) et validation de la commande avec génération de facture.
