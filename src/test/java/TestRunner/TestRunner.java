@@ -11,7 +11,8 @@ import org.junit.runner.RunWith;
        // features = "src/test/java/Features/Register.feature",
           //features ="src/test/java/Features/Login.feature",
        // features = "src/test/java/Features/Wishlist.feature",
-        features = "src/test/java/Features/ProductListing.feature",
+        //features = "src/test/java/Features/ProductListing.feature",
+        features = "src/test/java/Features/ProductDetail.feature",
 
 
 
