@@ -7,7 +7,6 @@
 
 ## 🎯 Plan de Test & Couverture des Modules
 
-Voici l'état d'avancement de la couverture des tests automatisés. Les modules cochés (done)sont entièrement codés et fonctionnels, tandis que les (WIP) représentent le backlog en cours de développement.
 
 ### 🔐 Gestion du Compte, Session  & gestion produit 
 - **Register** : Inscription d'un nouvel utilisateur avec validation des données obligatoires.
