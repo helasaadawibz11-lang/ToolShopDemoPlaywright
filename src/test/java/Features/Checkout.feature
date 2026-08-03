@@ -16,6 +16,7 @@ Feature: tester le module checkout et paiement du site Toolshopdemo
   #Test each payment method end-to-end.
 
   Background:
+
     Given je suis sur l accueil du site
     And le catalogue produits est affiché
     And j ajoute le produit Bolt Cutters a mon panier
