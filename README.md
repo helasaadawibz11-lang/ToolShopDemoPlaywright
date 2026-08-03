@@ -13,7 +13,7 @@
 - **Login** : Connexion réussie, gestion des profils (ex: *Bob Smith*) et déconnexion.
 - **Wishlist** : Ajout/suppression de produits depuis la fiche détail, gestion des doublons, points d'accès et persistance après reconnexion.
 
-### 🛒 Tunnel d'Achat Critique (E2E Core) — *En cours de construction*
+### 🛒 Tunnel d'Achat Critique (E2E Core) 
 -  **Product Listing** : Navigation dans le catalogue, filtres de recherche 
 -  **Product Detail Page** : Vérification des fiches produits, ajustement des quantités et ajout au panier.
 -  **Shopping Cart** : Modification du panier, suppression d'articles et calcul automatique du montant total.
